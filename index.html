@@ -6,57 +6,101 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
     <style>
+      body{
+        background-image: url(background5.JPG);
+        background-size:cover;
+        font-family: 'Josefin Sans', sans-serif;
+      }
       header {
-        color: blueviolet;
+        background-color: rgb(234, 208, 247);
+        padding: 5px 5px;
+      }
+      .fontawesome{
+        margin-right: 50px;
+        text-shadow: 5px 4px 8px rgb(68, 13, 105);
+      }
+
+      .fontawesome, header span i{
+        color: blue;
+      }
+      nav a{
+        
+        color: blue;
+        margin-right: 20px;
+        text-shadow: 5px 4px 8px rgb(68, 13, 105);
+      }
+      .footerfontawasome{
+        margin-right: 30px;
+        color: blue;
+        text-shadow: 5px 4px 8px blueviolet;
+      }
+      footer{
+        background-color: rgb(234, 208, 247);
+        padding: 5px 5px;
       }
     </style>
   </head>
   <body>
-    <header style="background-color: antiquewhite">
-      <i class="fa fa-user" aria-hidden="true"></i>
-      <span style="margin-right: 50px;">Suhas Javir</span>
-      <i class="fa fa-phone-square" aria-hidden="true"></i>
-      <span style="margin-right: 50px;">9850 6918 78</span>
-      <i class="fa fa-envelope" aria-hidden="true"></i>
-      &nbsp;suhas.javir9850@gmail.com
+    <header>
+      <span class="fontawesome">
+        <i class="fa fa-user" aria-hidden="true"></i>
+      Suhas Javir</span>
+      <span class="fontawesome">
+        <i class="fa fa-phone-square" aria-hidden="true"></i>
+       9850 6918 78</span>
+      <span class="fontawesome">
+        <i class="fa fa-envelope" aria-hidden="true"></i>
+      suhas.javir9850@gmail.com</span>
     </header>
     <br />
-    <nav>
-      <a href="home.html" target="myframe">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
-      <a href="techStack.html" target="myframe">TechStack</a
-      >&nbsp;&nbsp;&nbsp;&nbsp;
-      <a href="education.html" target="myframe">Education</a
-      >&nbsp;&nbsp;&nbsp;&nbsp;
-      <a href="project.html" target="myframe">Project</a
-      >&nbsp;&nbsp;&nbsp;&nbsp;
-      <a href="hobbies.html" target="myframe">Hobbies</a
-      >&nbsp;&nbsp;&nbsp;&nbsp;
-      <a href="personal.html" target="myframe">Personal</a
-      >&nbsp;&nbsp;&nbsp;&nbsp;
-      <a href="contactUs.html" target="myframe">Contact Us</a>
-      &nbsp;&nbsp;&nbsp;&nbsp;
-      <a href="cssLearning.html" target="myframe">Internal CSS</a>
-      &nbsp;&nbsp;&nbsp;&nbsp;
-      <a href="home.html" target="myframe">Others</a>&nbsp;&nbsp;&nbsp;&nbsp;
+    <nav style="background-color: rgb(234, 208, 247); padding: 5px 5px;" >
+      <a href="home.html" target="myframe">HOME</a>
+      <a href="techStack.html" target="myframe">TECHSTACK</a>
+      <a href="education.html" target="myframe">EDUCATION</a>
+      <a href="project.html" target="myframe">PROJECT</a>
+      <a href="hobbies.html" target="myframe">HOBBIES</a>
+      <a href="personal.html" target="myframe">PERSONAL</a>
+      <a href="contactUs.html" target="myframe">CONTACT US</a>
+      <a href="internalCSS.html" target="myframe">INTERNAL CSS</a>
+      <a href="home.html" target="myframe">Others</a>
     </nav>
-    <iframe
-      width="900px"
-      height="500px"
-      name="myframe"
-      frameborder="1px"
-      src="home.html"
-    ></iframe>
-    <p></p>
-    <footer>
-      <span style="margin-right: 30px;"> Follow me</span> <span style="margin-right: 30px;"><i
-        class="fa fa-linkedin-square"
-        aria-hidden="true"
-      ></i></span>
+    <table>
+      <tbody>
+        <tr>
+          <td><iframe
+            width="900px"
+            height="500px"
+            name="myframe"
+            frameborder="1px"
+            src="home.html"
+          ></iframe></td>
+          <td>&nbsp;&nbsp;&nbsp;<img src="background7.JPG" width="400px" height="170px"></td>
+        </tr>
+      </tbody>
+    </table>
+    
+       
+      <footer>
+        <table>
+          <tbody>
+            <tr>
+              <td><span class="footerfontawasome"><b> Follow me</b></span> 
+                <a href="https://in.linkedin.com/" target="blank"  class="footerfontawasome">
+                  <i class="fa fa-linkedin-square" target="blank" aria-hidden="true"></i></a>
+                <a href="https://www.google.com/" target="blank" class="footerfontawasome"> <i class="fa fa-google" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/accounts/login/" target="blank" class="footerfontawasome"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="https://www.facebook.com/login/" target="blank" class="footerfontawasome"> <i class="fa fa-facebook-official" aria-hidden="true"></i></a></td>
+              <td ><marquee width="600px">Codemind Technologies Services - Pune, Maharashtra, India</marquee></td>
+              </tr>
+          </tbody>
+        </table>
       
-      <span style="margin-right: 30px;"><i class="fa fa-google" aria-hidden="true"></i></span>
-      <span style="margin-right: 30px;"><i class="fa fa-instagram" aria-hidden="true"></i></span>
-      <i class="fa fa-facebook-official" aria-hidden="true"></i>
+    
     </footer>
+  
   </body>
 </html>
