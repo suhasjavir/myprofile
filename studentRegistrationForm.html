@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap"
+      rel="stylesheet"
+    />
+  <style>
+   
+   /* To avoid duplication of code use "attribute selector" seperate by use of coma(,):
+    input[type="text"], input[type="number"]{
+      color: #e84118;
+      border: 1px solid black;
+      width: 200px;
+      height: 25px;
+      border-radius: 20px;
+      text-transform: capitalize;
+      font-style: italic;
+    } */
+
+    body {
+      font-family: "Josefin Sans", sans-serif;
+      background-color: #dff9fb;
+    }
+
+    b {
+      color: #e84118;
+      height: 25px;
+      font-size: 25px;
+    }
+    label {
+      color: rgb(238, 77, 77);
+      border: 0.1px solid rgb(114, 109, 109);
+      border-radius: 20px;
+      width: 200px;
+      height: 25px;
+      background-color: #b2c7ee;
+      font-size: 20px;
+    }
+    input[type="text"] {
+      color: #e84118;
+      border: 1px solid black;
+      width: 200px;
+      height: 25px;
+      border-radius: 20px;
+      text-transform: capitalize;
+      font-style: italic;
+    }
+    input[type="number"] {
+      color: #e84118;
+      width: 200px;
+      height: 25px;
+      border: 1px solid black;
+      border-radius: 20px;
+      font-style: italic;
+    }
+    input[type="email"] {
+      color: #e84118;
+      width: 200px;
+      height: 25px;
+      border-radius: 20px;
+      border: 1px solid black;
+    }
+    input[type="password"] {
+      color: #e84118;
+      width: 200px;
+      height: 25px;
+      border-radius: 20px;
+      border: 1px solid black;
+    }
+    input[type="date"] {
+      color: #e84118;
+      width: 200px;
+      height: 25px;
+      border-radius: 20px;
+      border: 1px solid black;
+    }
+    input[type="week"] {
+      color: #e84118;
+      width: 200px;
+      height: 25px;
+      border-radius: 20px;
+      border: 1px solid black;
+    }
+    input[type="time"] {
+      color: #e84118;
+      width: 200px;
+      height: 25px;
+      border-radius: 20px;
+      border: 1px solid black;
+    }
+    input[type="file"] {
+      color: #e84118;
+      width: 200px;
+      height: 25px;
+      border-radius: 20px;
+      border: 1px solid black;
+    }
+    .format {
+      color: #e84118;
+      width: 200px;
+      height: 25px;
+      border-radius: 20px;
+      border: 1px solid black;
+    }
+    input[type="radio"] {
+      color: #e84118;
+      width: 15px;
+      height: 15px;
+    }
+    input[type="checkbox"] {
+      color: #e84118;
+      width: 15px;
+      height: 15px;
+    }
+    input[type="textarea"] {
+      color: #e84118;
+      border: 1px solid black;
+    }
+    input[type="button"]{
+      color: #e84118;
+      width: 200px;
+      height: 25px;
+      border-radius: 20px;
+      border: 1px solid black;
+    }
+    button:hover{
+      background-color: #e76f51;
+    }
+  </style>
+  </head>
+  <body>
+    <form>
+      <table>
+        <tbody>
+          <tr>
+            <td colspan="2">
+              <marquee behavior="" direction=""
+                ><b>Student Registration Form</b></marquee
+              >
+            </td>
+          </tr>
+          <tr>
+            <td><label>First Name</label></td>
+            <td>
+              <input
+                type="text"
+                placeholder="Capital Letter Please"
+                required
+                autofocus
+                maxlength="15"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Last Name</label></td>
+
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td><label> Mobile Number</label></td>
+            <td><input type="number" placeholder="Max 10 digits" /></td>
+          </tr>
+          <tr>
+            <td><label> Email ID </label></td>
+            <td><input type="email" placeholder="abc@gmail.com" /></td>
+          </tr>
+
+          <tr>
+            <td><label> Password </label></td>
+            <td><input type="password" /></td>
+          </tr>
+          <tr>
+            <td><label> Date of Birth </label></td>
+            <td><input type="date" /></td>
+          </tr>
+
+          <tr>
+            <td><label> Available in week </label></td>
+            <td><input type="week" /></td>
+          </tr>
+
+          <tr>
+            <td><label> Available in time </label></td>
+            <td><input type="time" /></td>
+          </tr>
+          <tr>
+            <td><label> Profile Photo </label></td>
+            <td><input type="file" /></td>
+          </tr>
+
+          <tr>
+            <td><label> Upload Graduation Mark sheets </label></td>
+            <td><input type="file" multiple /></td>
+          </tr>
+          <tr>
+            <td><label>Graduation </label></td>
+            <td>
+              <select class="format">
+                <option>BE</option>
+                <option>MCA</option>
+                <option>BCA</option>
+                <option>BSC</option>
+                <option>B.Tech</option>
+                <option>BCS</option>
+                <option>MSC</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label> Select Gender </label></td>
+            <td>
+              <input type="radio" name="gender" /> <label> Male</label>
+              <input type="radio" name="gender" /> <label> Female </label>
+              <input type="radio" name="gender" /> <label> Others </label>
+            </td>
+          </tr>
+          <tr>
+            <td><label> Select Training </label></td>
+            <td>
+              <input type="checkbox" /> <label> Angular </label>
+              <input type="checkbox" /> <label> React </label>
+              <input type="checkbox" /> <label> Java </label>
+              <input type="checkbox" /> <label> Data Science </label>
+              <input type="checkbox" />
+              <label> Manual + Automation Testing </label>
+            </td>
+          </tr>
+          <tr>
+            <td><label> Present Address </label></td>
+            <td><textarea rows="4" cols="40"> </textarea></td>
+          </tr>
+          <tr>
+            <td><label for="">Age</label></td>
+            <td><input type="number" value="22" /></td>
+          </tr>
+          <tr>
+            <td><label for=""> State</label></td>
+            <td><input type="text" value="MH" readonly /></td>
+          </tr>
+          <tr>
+            <td><label for="">Country</label></td>
+            <td><input type="text" value="India" disabled /></td>
+          </tr>
+          <tr>
+            <td><button type="submit">Register</button></td>
+            <td><button type="reset">Clear All</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+  </body>
+</html>
